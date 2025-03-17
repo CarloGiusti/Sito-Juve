@@ -1,0 +1,47 @@
+/* Stili generali */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Stile dell'header */
+header {
+    background-color: #000; /* Nero */
+    color: #fff; /* Bianco */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Stile delle sezioni */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #fff; /* Bianco */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile del footer */
+footer {
+    background-color: #000; /* Nero */
+    color: #fff; /* Bianco */
+    padding: 10px 0;
+    margin-top: 20px;
+}
