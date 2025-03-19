@@ -53,6 +53,21 @@
             border-radius: 5px;
             padding: 5px;
         }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000; /* Colore di sfondo se il video non si carica */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -63,7 +78,7 @@
 
         <!-- Header -->
         <header id="header" class="alt">
-            <span class="logo"><img src="images/logo juve.png" alt="Juventus Logo" /></span>
+            <span class="logo"><img src="images/logo_juve.png" alt="Juventus Logo" /></span>
             <h1>Juventus FC</h1>
             <p>Benvenuti nel sito ufficiale della Juventus Football Club, la squadra più titolata d'Italia.</p>
         </header>
@@ -76,6 +91,7 @@
                 <li><a href="#rosa">Rosa 2024/2025</a></li>
                 <li><a href="#delpiero">Alessandro Del Piero</a></li>
                 <li><a href="#store">Store Juventus</a></li>
+                <li><a href="#stadium">Storia dello Stadio</a></li>
                 <li><a href="#social">Seguici sui Social</a></li>
             </ul>
         </nav>
@@ -93,8 +109,8 @@
                         <p>La Juventus Football Club, fondata nel 1897 a Torino, è conosciuta come "La Vecchia Signora". Con oltre un secolo di storia, la Juventus è diventata una delle squadre più vincenti e rispettate nel calcio mondiale. I colori bianconeri e il famoso scudetto sono simboli di una tradizione calcistica ricca di successi.</p>
                         <p>Nel corso della sua storia, la Juventus ha visto passare tra le sue fila alcuni dei più grandi calciatori del mondo, contribuendo non solo a costruire la sua leggenda, ma anche a creare una base di tifosi appassionati e devoti. Ogni stagione, la Juventus cerca di continuare questa tradizione di eccellenza e competizione ai massimi livelli, sia in Italia che in Europa.</p>
                     </div>
-                    
-                
+                    <span class="image"><img src="images/stadium.jpg" alt="Juventus Stadium" /></span>
+                </div>
             </section>
 
             <!-- Trofei -->
@@ -172,6 +188,19 @@
                 <p>Del Piero non è solo un grande calciatore, ma anche un esempio di professionalità e leadership. La sua carriera è stata caratterizzata da momenti indimenticabili, come il gol in finale di Champions League e le celebrazioni con i tifosi. La sua eredità vive ancora oggi, e i suoi insegnamenti ispirano le nuove generazioni di calciatori e i fan della Juventus.</p>
             </section>
 
+            <!-- Storia dello Stadio -->
+            <section id="stadium" class="main special">
+                <header class="major">
+                    <h2>Storia dello Stadio</h2>
+                </header>
+                <p>L'Allianz Stadium, inaugurato nel 2011, è il nuovo stadio di casa della Juventus, sostituendo il vecchio Stadio delle Alpi. Questo stadio rappresenta un passo importante per la Juventus, non solo per la sua architettura moderna e l'attenzione all'esperienza dei tifosi, ma anche per la sua capacità di ospitare eventi di rilevanza internazionale.</p>
+                <p>Con una capacità di circa 41.000 spettatori, l'Allianz Stadium è progettato per garantire un'ottima visibilità e un'atmosfera coinvolgente durante le partite. Sin dalla sua apertura, lo stadio ha ospitato numerosi eventi, tra cui partite di Serie A, Coppe Nazionali e incontri di UEFA Champions League, diventando un simbolo dell'orgoglio bianconero.</p>
+                <p>La struttura è dotata di moderni impianti di sicurezza, servizi e comfort, rendendo l'esperienza del tifoso ancora più piacevole. Inoltre, il design distintivo dello stadio riflette l'identità e la tradizione della Juventus, creando un ambiente che celebra la storia e il successo del club.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eT2bm5dRtiA" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+
             <!-- Store Juventus -->
             <section id="store" class="main special">
                 <header class="major">
@@ -183,7 +212,14 @@
                 </ul>
             </section>
 
-           
+            <!-- GIF Juventus -->
+            <section id="gif" class="main special">
+                <header class="major">
+                    <h2>Supporta la Juventus</h2>
+                </header>
+                <p>Guarda la nostra emozionante GIF e preparati a tifare per la Juventus in ogni partita!</p>
+                <img src="images/juventus.png" alt="Juventus Image" />
+            </section>
 
             <!-- Social Media -->
             <section id="social" class="main special">
